@@ -30,6 +30,7 @@ import Card from '@material-ui/core/Card';
 import TextField from '@material-ui/core/TextField';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import Badge from '@material-ui/core/Badge';
+import { NavLink } from "react-router-dom";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -85,6 +86,7 @@ const Header = () => {
                     <ListItemIcon>
                       <HomeIcon color="primary" />
                     </ListItemIcon>
+                    <NavLink to='/'> </NavLink>
                     <ListItemText primary="Admin" />
                   </ListItem>
                   <ListItem button onClick={() => handleLeadershipTriadClick()}>
