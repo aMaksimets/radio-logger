@@ -1,7 +1,9 @@
 import React from "react";
 import MyNav from "./components/MyNav.js";
 import { Switch, Route } from "react-router-dom";
-
+import SignIn from "./components/SignIn.js";
+import HamLog from "./components";
+import SwlLog from "./components";
 
 function App() {
   
@@ -16,8 +18,8 @@ function App() {
             <Route path='/hamform'>
               <HamLog />
             </Route>
-            <Route path='/swlform'>
-              <Swlform />
+            <Route path='/swllog'>
+              <SwlLog />
             </Route>
         </Switch>
     </div>
