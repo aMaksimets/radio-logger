@@ -6,9 +6,11 @@ import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles ()
-
+const SwlLog = () => {
 const classes = useStyles()
 
+return (
+<div>
             <Container>
                 <Paper elevation={1} variant="outlined" square>
                     <Card>
@@ -54,5 +56,8 @@ const classes = useStyles()
                     </Card>
                 </Paper>
             </Container>
+</div>
+);
+};
 
 export default SwlLog;

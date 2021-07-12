@@ -1,4 +1,3 @@
-import { Component, Fragment } from 'react';
 import Container from '@material-ui/core/Container';
 import Paper from '@material-ui/core/Paper';
 import Card from '@material-ui/core/Card';
@@ -6,7 +5,7 @@ import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles ()
-
+const HamLog = () => {
 const classes = useStyles();
 
 return (
@@ -58,4 +57,5 @@ return (
             </Container>
 </div>
 );
+};
 export default HamLog;

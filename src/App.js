@@ -1,6 +1,6 @@
 import React from "react";
 import MyNav from "./components/MyNav.js";
-import { Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route, Router } from "react-router-dom";
 import SignIn from "./components/SignIn";
 import HamLog from "./components/HamLog";
 import SwlLog from "./components/SwlLog";
