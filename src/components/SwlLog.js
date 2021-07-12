@@ -1,3 +1,4 @@
+import React from 'react';
 import Container from '@material-ui/core/Container';
 import Paper from '@material-ui/core/Paper';
 import Card from '@material-ui/core/Card';
@@ -8,7 +9,6 @@ const useStyles = makeStyles ()
 
 const classes = useStyles()
 
-<div>
             <Container>
                 <Paper elevation={1} variant="outlined" square>
                     <Card>
@@ -54,4 +54,5 @@ const classes = useStyles()
                     </Card>
                 </Paper>
             </Container>
-</div>
+
+export default SwlLog;

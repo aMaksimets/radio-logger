@@ -23,13 +23,9 @@ import MenuItem from "@material-ui/core/MenuItem";
 import Collapse from "@material-ui/core/Collapse";
 import SettingsIcon from '@material-ui/icons/Settings';
 import FolderIcon from '@material-ui/icons/Folder';
-import SearchIcon from '@material-ui/icons/Search';
-import Container from '@material-ui/core/Container';
-import Paper from '@material-ui/core/Paper';
-import Card from '@material-ui/core/Card';
-import TextField from '@material-ui/core/TextField';
+import SearchIcon from "@material-ui/icons/Search";
 import NotificationsIcon from '@material-ui/icons/Notifications';
-import Badge from '@material-ui/core/Badge';
+import Badge from "@material-ui/core/Badge";
 import { NavLink } from "react-router-dom";
 
 

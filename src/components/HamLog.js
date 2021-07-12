@@ -1,3 +1,4 @@
+import { Component, Fragment } from 'react';
 import Container from '@material-ui/core/Container';
 import Paper from '@material-ui/core/Paper';
 import Card from '@material-ui/core/Card';
@@ -8,6 +9,7 @@ const useStyles = makeStyles ()
 
 const classes = useStyles();
 
+return (
 <div>
             <Container>
                 <Paper elevation={1} variant="outlined" square>
@@ -54,4 +56,6 @@ const classes = useStyles();
                     </Card>
                 </Paper>
             </Container>
-</div>;
+</div>
+);
+export default HamLog;
