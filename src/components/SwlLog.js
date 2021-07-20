@@ -4,21 +4,42 @@ import Paper from '@material-ui/core/Paper';
 import Card from '@material-ui/core/Card';
 import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
+import { grid } from '@material-ui/system';
 
-const useStyles = makeStyles ()
+const useStyles = makeStyles ({
+    root: {
+        display: grid,
+        grid-template-columns: repeat(auto-fill, minmax(min(100 %, 17rem), 1fr)));
+        width: 100 % ;
+        max-width: 40rem ;
+        margin: 0 auto;
+    },
+});
+
 const SwlLog = () => {
-const classes = useStyles()
+
+const classes = useStyles({
+    
+})
+
 
 return (
 <div>
-            <Container>
+            <Container maxWidth="lg">
                 <Paper elevation={1} variant="outlined" square>
                     <Card>
-                        <form>
-                            <input type="text" />
-                        </form>
                         <form className={classes.container} noValidate>
-                            <TextField
+                        <TextField
+                            style={{
+                                display: "flex"
+                            }}
+                            InputProps={{
+                                style: {
+                                    color: "black"
+                                }
+                            }}
+                            />
+                        <TextField
                                 id="date"
                                 label="Today's Date"
                                 type="date"
@@ -27,10 +48,20 @@ return (
                                 InputLabelProps={{
                                     shrink: true,
                                 }}
+                        />
+
+                        <TextField
+                            style={{
+                                display: "flex"
+                            }}
+                            InputProps={{
+                                style: {
+                                    color: "black"
+                                }
+                            }}
                             />
-                        </form>
-                        <form className={classes.container} noValidate>
-                            <TextField
+                            
+                        <TextField
                                 id="date"
                                 label="Time (UTC/GMT)"
                                 type="time"
@@ -39,10 +70,19 @@ return (
                                 InputLabelProps={{
                                     shrink: true,
                                 }}
+                        />
+                        
+                        <TextField
+                            style={{
+                                display: "flex"
+                            }}
+                            InputProps={{
+                                style: {
+                                    color: "black"
+                                }
+                            }}
                             />
-                        </form>
-                        <form className={classes.container} noValidate>
-                            <TextField
+                        <TextField
                                 id="number"
                                 label="Frequency"
                                 type="number"
