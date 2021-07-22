@@ -7,20 +7,21 @@ import { makeStyles } from '@material-ui/core/styles';
 import { grid } from '@material-ui/system';
 
 const useStyles = makeStyles ({
-    root: {
+    container: {
         display: grid,
-        grid-template-columns: repeat(auto-fill, minmax(min(100 %, 17rem), 1fr)));
-        width: 100 % ;
-        max-width: 40rem ;
-        margin: 0 auto;
+        gridTemplateColumns: 'repeat(auto-fill, minmax(10em, 1fr)',
+        height: '400px',
+        width: '100 %' ,
+        maxWidth: '40rem' ,
+        margin: '0 auto'
     },
+
+    
 });
 
 const SwlLog = () => {
 
-const classes = useStyles({
-    
-})
+const classes = useStyles()
 
 
 return (
