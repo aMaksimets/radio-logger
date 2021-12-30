@@ -8,7 +8,6 @@ Please check if your PR fulfills the following requirements:
 - [ ] Build (`npm run build`) was run locally and any changes were pushed
 - [ ] Lint (`npm run lint`) has passed locally and any fixes were made for failures
 
-
 ## Pull request type
 
 <!-- Please do not submit updates to dependencies unless it fixes an issue. --> 
@@ -24,12 +23,10 @@ Please check the type of change your PR introduces:
 - [ ] Documentation content changes
 - [ ] Other (please describe): 
 
-
 ## What is the current behavior?
 <!-- Please describe the current behavior that you are modifying, or link to a relevant issue. -->
 
 Issue Number: N/A
-
 
 ## What is the new behavior?
 <!-- Please describe the behavior or changes that are being added by this PR. -->

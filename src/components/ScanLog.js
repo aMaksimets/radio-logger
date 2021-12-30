@@ -1,21 +1,23 @@
+import React from 'react';
 import Container from '@material-ui/core/Container';
 import Paper from '@material-ui/core/Paper';
 import Card from '@material-ui/core/Card';
 import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles()
-const ContestLog = () => {
+const useStyles = makeStyles({
+});
+
+const ScanLog = () => {
+
     const classes = useStyles();
+
 
     return (
         <div>
-            <Container>
+            <Container maxWidth="lg">
                 <Paper elevation={1} variant="outlined" square>
                     <Card>
-                        <form>
-                            <input type="text" />
-                        </form>
                         <form className={classes.container} noValidate>
                             <TextField
                                 id="date"
@@ -27,8 +29,7 @@ const ContestLog = () => {
                                     shrink: true,
                                 }}
                             />
-                        </form>
-                        <form className={classes.container} noValidate>
+
                             <TextField
                                 id="date"
                                 label="Time (UTC/GMT)"
@@ -39,8 +40,7 @@ const ContestLog = () => {
                                     shrink: true,
                                 }}
                             />
-                        </form>
-                        <form className={classes.container} noValidate>
+
                             <TextField
                                 id="number"
                                 label="Frequency"
@@ -58,4 +58,5 @@ const ContestLog = () => {
         </div>
     );
 };
-export default ContestLog;
+
+export default ScanLog
