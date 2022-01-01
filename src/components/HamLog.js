@@ -1,109 +1,83 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Container from '@material-ui/core/Container';
 import Paper from '@material-ui/core/Paper';
 import Card from '@material-ui/core/Card';
 import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
+// import { Select } from '@material-ui/core';
 
 const useStyles = makeStyles({
     container: {
-
+        marginTop: "5px"
     },
     textField: {
-        padding: "15px"
+        padding: "5px",
+        marginTop: "5px"
     }
 });
 
-const band = [
-    {
-        value: '160m',
-        label: '160m',
-    },
-    {
-        value: '80m',
-        label: '80m',
-    },
-    {
-        value: '40m',
-        label: '40m',
-    },
-    {
-        value: '20m',
-        label: '20m',
-    },
-];
-
-function SwlLog() {
+function HamLog() {
 
     const classes = useStyles();
 
-    function Band() {
-        const [band, setBand] = React.useState('');
-        function handleChange(event) {
-            setBand(event.target.value);
-            return (
-                <div>
-                    <Container maxWidth="lg">
-                        <Paper elevation={1} variant="outlined" square>
-                            <Card>
-                                <form className={classes.container} noValidate>
-                                    <TextField
-                                        id="date"
-                                        label="Today's Date"
-                                        type="date"
-                                        defaultValue="2017-05-24"
-                                        className={classes.textField}
-                                        InputLabelProps={{
-                                            shrink: true,
-                                        }} />
 
-                                    <TextField
-                                        id="date"
-                                        label="Time (UTC/GMT)"
-                                        type="time"
-                                        defaultValue="2017-05-24"
-                                        className={classes.textField}
-                                        InputLabelProps={{
-                                            shrink: true,
-                                        }} />
+    return (
+        <div>
+            <Container maxWidth="xl">
+                <Paper elevation={1} variant="outlined" square>
+                    <Card>
+                        <form className={classes.container} noValidate>
+                            <TextField
+                                id="date"
+                                variant="outlined"
+                                label="Today's Date"
+                                type="date"
+                                defaultValue="2017-05-24"
+                                className={classes.textField}
+                                InputLabelProps={{
+                                    shrink: true,
+                                }} />
 
-                                    <TextField
-                                        id="number"
-                                        label="Frequency"
-                                        type="number"
-                                        defaultValue="1800"
-                                        inputProps={{ min: "1800", max: "30000", step: "1" }}
-                                        className={classes.textField}
-                                        InputLabelProps={{
-                                            shrink: true,
-                                        }} />
-                                    <TextField
-                                        id="band"
-                                        select
-                                        label="Band"
-                                        type="number"
-                                        value={band}
-                                        onChange={handleChange}
-                                        SelectProps={{
-                                            native: true,
-                                        }}
-                                        helperText="Please select your band"
-                                        className={classes.textField}
-                                        InputLabelProps={{
-                                            shrink: true,
-                                        }} />
-                                    {band.map((option) => (
-                                        <option key={option.value} value={option.value}>
-                                            {option.label}
-                                        </option>
-                                    ))}
-                                </form>
-                            </Card>
-                        </Paper>
-                    </Container>
-                </div>
-            );
-        }
-    }
+                            <TextField
+                                id="date"
+                                variant="outlined"
+                                label="Time (UTC/GMT)"
+                                type="time"
+                                defaultValue="2017-05-24"
+                                className={classes.textField}
+                                InputLabelProps={{
+                                    shrink: true,
+                                }} />
+
+                            <TextField
+                                id="number"
+                                variant="outlined"
+                                label="Frequency"
+                                type="number"
+                                defaultValue="1800"
+                                inputProps={{ min: "1800", max: "30000", step: "1" }}
+                                className={classes.textField}
+                                InputLabelProps={{
+                                    shrink: true,
+                                }} />
+                            <TextField
+                                id="number"
+                                variant="outlined"
+                                type="number"
+                                select
+                                label="Band"
+                                defaultValue="160m"
+                                className={classes.textField}
+                                InputLabelProps={{
+                                    shrink: true,
+                                }}
+                                 />
+                        </form>
+                    </Card>
+                </Paper>
+            </Container>
+        </div>
+    );
 }
-export default SwlLog;
+
+export default HamLog;

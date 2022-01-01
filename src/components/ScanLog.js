@@ -6,6 +6,13 @@ import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
+  container: {
+        marginTop: "5px"
+    },
+    textField: {
+        padding: "5px",
+        marginTop: "5px"
+    }
 });
 
 const ScanLog = () => {
@@ -15,12 +22,13 @@ const ScanLog = () => {
 
     return (
         <div>
-            <Container maxWidth="lg">
+            <Container maxWidth="xl">
                 <Paper elevation={1} variant="outlined" square>
                     <Card>
                         <form className={classes.container} noValidate>
                             <TextField
                                 id="date"
+                                variant="outlined"
                                 label="Today's Date"
                                 type="date"
                                 defaultValue="2017-05-24"
@@ -32,6 +40,7 @@ const ScanLog = () => {
 
                             <TextField
                                 id="date"
+                                variant="outlined"
                                 label="Time (UTC/GMT)"
                                 type="time"
                                 defaultValue="2017-05-24"
@@ -43,9 +52,20 @@ const ScanLog = () => {
 
                             <TextField
                                 id="number"
+                                variant="outlined"
                                 label="Frequency"
                                 type="number"
-                                defaultValue="1800"
+                                defaultValue="30000"
+                                className={classes.textField}
+                                InputLabelProps={{
+                                    shrink: true,
+                                }}
+                            />
+                            <TextField
+                                id="text"
+                                variant="outlined"
+                                label="Call Sign"
+                                type="text"
                                 className={classes.textField}
                                 InputLabelProps={{
                                     shrink: true,

@@ -7,10 +7,11 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
     container: {
-
+        marginTop: "10px"
     },
     textField: {
-        padding: "15px"
+        padding: "5px",
+        marginTop: "5px"
     }
 });
 
@@ -21,12 +22,13 @@ const SwlLog = () => {
 
     return (
         <div>
-            <Container maxWidth="lg">
+            <Container maxWidth="xl">
                 <Paper elevation={1} variant="outlined" square>
                     <Card>
                         <form className={classes.container} noValidate>
                             <TextField
                                 id="date"
+                                variant="outlined"
                                 label="Today's Date"
                                 type="date"
                                 defaultValue="2017-05-24"
@@ -38,6 +40,7 @@ const SwlLog = () => {
 
                             <TextField
                                 id="date"
+                                variant="outlined"
                                 label="Time (UTC/GMT)"
                                 type="time"
                                 defaultValue="2017-05-24"
@@ -49,6 +52,7 @@ const SwlLog = () => {
 
                             <TextField
                                 id="number"
+                                variant="outlined"
                                 label="Frequency"
                                 type="number"
                                 defaultValue="1800"

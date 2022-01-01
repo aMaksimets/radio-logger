@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    class Navbar extends React.Component {
+      render() {
+        return (
+          <div>
+            <ul id="nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        );
+      }
+    }
+
+    class App extends React.Component {
+      render() {
+        return (
+          <div>
+            <Navbar />
+            <div>
+              [Page content here]
+            </div>
+          </div>
+        )
+      }
+    }
+
+
+
+    ReactDOM.render(
+      <App />,
+      document.getElementById('app')
+    );
+  </script>
+  <script>
+    #nav {
+      width: 100 %;
+      float: left;
+      margin: 0 0 3em 0;
+      padding: 0;
+      list - style: none;
+    }
+    #nav li {
+      float: left;
+    }
+
+    #nav li a {
+      display: block;
+      padding: 8px 15px;
+      text - decoration: none;
+      font - weight: bold;
+      color: #069;
+      border - right: 1px solid #ccc;
+    }
+
+    #nav li a {
+      display: block;
+      padding: 8px 15px;
+      text - decoration: none;
+      font - weight: bold;
+      color: #069;
+      border - right: 1px solid #ccc;
+    };
+  </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.development.min.js"
+  integrity="sha512-aNBFq6ue8EmNDwVD/l0mWFy3iVZLIxtQaD7fEYBn3HluJer36T1AhJK0THj6MKKfhZrexxWsKX1T16TxLZo6uQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.development.js"
+  integrity="sha512-Vf2xGDzpqUOEIKO+X2rgTLWPY+65++WPwCHkX2nFMu9IcstumPsf/uKKRd5prX3wOu8Q0GBylRpsDB26R6ExOg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<div id="app"></div>
+
+</body>
+
+</html>

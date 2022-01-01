@@ -1,4 +1,14 @@
 {
-    "editor.fontSize": 16,
-    "liveServer.settings.port": 5501
+  "editor.fontSize": 16,
+  "liveServer.settings.port": 5501,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // Use prettier as default formatter
+  "editor.formatOnPaste": true, // format code on paste
+  "editor.formatOnType": true, // format code as you type
+  "editor.formatOnSave": true, // format code when you hit save
+  "files.trimTrailingWhitespace": true, // remove trailing white spaces from all lines
+  "files.trimFinalNewlines": true, // Ensures there's only one blank line at the end of the file
+  "javascript.format.enable": false,
 }

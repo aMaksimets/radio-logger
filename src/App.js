@@ -24,7 +24,7 @@ class App extends Component {
                         <Route exact path='/hamlog' component={HamLog}>
                             <HamLog />
                         </Route>
-                        <Route exact path='/mwllog' component={MwLog}>
+                        <Route exact path='/mwlog' component={MwLog}>
                             <MwLog />
                         </Route>
                         <Route exact path='/swllog' component={SwlLog}>
