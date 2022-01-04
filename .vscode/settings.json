@@ -1,5 +1,5 @@
 {
-  "editor.fontSize": 16,
+  "editor.fontSize": 19,
   "liveServer.settings.port": 5501,
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
@@ -11,4 +11,32 @@
   "files.trimTrailingWhitespace": true, // remove trailing white spaces from all lines
   "files.trimFinalNewlines": true, // Ensures there's only one blank line at the end of the file
   "javascript.format.enable": false,
+  "eslint.alwaysShowStatus": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  // turn it off for JS and JSX, we will do this via eslint
+  "[javascriptreact]": {
+    "editor.formatOnSave": false
+  },
+  // tell the ESLint plugin to run on save
+  "eslint.validate": ["vue", "html", "javascript", "javascriptreact"],
+
+  "eslint.workingDirectories": [{ "mode": "auto" }],
+  "liveServer.settings.donotShowInfoMsg": true,
+  "workbench.startupEditor": "welcomePage",
+  "liveServer.settings.donotVerifyTags": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  }
 }
