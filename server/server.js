@@ -5,8 +5,9 @@ var app = express();
 // Render static files
 app.use(express.static('public'));
 // Port website will run on
-app.listen(3001, () => {
-  console.log('Listening on Port 3000');
+const port = 3000;
+app.listen(port, () => {
+  console.log(`Listening on Port ${port}`);
 });
 
 // *** GET Routes - display pages ***
