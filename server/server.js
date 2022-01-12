@@ -5,7 +5,7 @@ var app = express();
 // Render static files
 app.use(express.static('public'));
 // Port website will run on
-const port = 3001;
+const port = 3000;
 app.listen(port, () => {
   console.log(`Listening on Port ${port}`);
 });
