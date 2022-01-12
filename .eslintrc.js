@@ -7,6 +7,7 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
+    allowImportExportEverywhere: true,
   },
   settings: {
     react: {
@@ -21,8 +22,7 @@ module.exports = {
     es6: true,
     node: true,
   },
-  plugins: [
-    'react', 'prettier'],
+  plugins: ['react', 'prettier'],
   extends: [
     'eslint:recommended',
     'prettier',

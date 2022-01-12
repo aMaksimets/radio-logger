@@ -5,7 +5,7 @@
   "printWidth": 100,
   "singleQuote": true,
   "trailingComma": "es5",
-  "jsxBracketSameLine": true,
+  "bracketSameLine": true,
   "bracketSpacing": true,
   "embeddedLanguageFormatting": "auto",
   "htmlWhitespaceSensitivity": "css",
@@ -16,5 +16,7 @@
   "requirePragma": false,
   "useTabs": false,
   "vueIndentScriptAndStyle": false,
-  "rangeStart": 0
+  "rangeStart": 0,
+  "endOfLine": "auto",
+  "react/jsx-max-props-per-line": [1, { "when": "always" }]
 }
