@@ -222,12 +222,24 @@ const Header = () => {
             keepMounted
             open={Boolean(anchorEl)}
             onClose={handleClose}>
-            <MenuItem onClick={handleClose}>Profile</MenuItem>
-            <MenuItem onClick={handleClose}>Login</MenuItem>
-            <MenuItem onClick={handleClose}>Logout</MenuItem>
-            <MenuItem onClick={handleClose}>Admin</MenuItem>
-            <MenuItem onClick={handleClose}>Register</MenuItem>
-            <MenuItem onClick={handleClose}>Settings</MenuItem>
+            <MenuItem onClick={handleClose} component={Link} to='/design'>
+              Profile
+            </MenuItem>
+            <MenuItem onClick={handleClose} component={Link} to='/signin'>
+              Login
+            </MenuItem>
+            <MenuItem onClick={handleClose} component={Link} to='/logout'>
+              Logout
+            </MenuItem>
+            <MenuItem onClick={handleClose} component={Link} to='/design'>
+              Admin
+            </MenuItem>
+            <MenuItem onClick={handleClose} component={Link} to='/design'>
+              Register
+            </MenuItem>
+            <MenuItem onClick={handleClose} component={Link} to='/design'>
+              Settings
+            </MenuItem>
           </Menu>
         </Toolbar>
       </AppBar>

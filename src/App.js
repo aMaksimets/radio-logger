@@ -12,25 +12,25 @@ const App = () => {
   return (
     <section className='App'>
       <Router>
-        <MyNav>
-          <Routes>
-            <Route exact path='/' element={'/'} />
-            <Route exact path='/signin' element={<SignIn />} />
+        <MyNav />
+        <Routes>
+          <Route exact path='/' element={'/'} />
+          <Route exact path='/signin' element={<SignIn />} />
 
-            <Route exact path='/hamlog' element={<HamLog />} />
+          <Route exact path='/hamlog' element={<HamLog />} />
 
-            <Route exact path='/mwlog' element={<MwLog />} />
+          <Route exact path='/mwlog' element={<MwLog />} />
 
-            <Route exact path='/swllog' element={<SwlLog />} />
+          <Route exact path='/swllog' element={<SwlLog />} />
 
-            <Route exact path='/vhflog' element={<ScanLog />} />
+          <Route exact path='/vhflog' element={<ScanLog />} />
 
-            <Route path='/contestlog' element={<SwlLog />} />
+          <Route path='/contestlog' element={<SwlLog />} />
 
-            <Route path='/settings' element={<SwlLog />} />
-          </Routes>
-        </MyNav>
+          <Route path='/settings' element={<SwlLog />} />
+        </Routes>
       </Router>
+      {/* <SignIn /> */}
     </section>
   );
 };
