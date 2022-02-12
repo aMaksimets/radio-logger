@@ -1,8 +1,8 @@
 # Development Setup Guide
 
-This guide is for the people that would like to contribute to radio-logger and do it well.
+This guide is for the people that would like to contribute to radio-logger.
 
-While we use VSCode and Visual Studio 2019, but you can use whatever IDE or editor you prefer.
+While we use VSCode and Visual Studio 2019, you can use whatever IDE or editor you prefer.
 
 Please have a read on [CODESTYLE.md](CODESTYLE.md), any code that does not apply to these rules will not get merged.
 
@@ -15,7 +15,7 @@ It's very global, so you might need to take some extra steps to get it to work f
 2. Check out your fork and open it in your favorite IDE or editor
 3. If your favorite IDE is not below, please add your workspace and or project configuration settings to this project.
 
-Install Prettier 2.5 or 2.6.x, ESLint v8.6, Babel v7.
+Install Prettier 2.5 or 2.6.x, ESLint v8.6, Babel v7 and any of their plugins for REACT.
 
 ## Review Process
 
